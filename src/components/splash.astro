@@ -1,0 +1,85 @@
+---
+import { Picture } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
+import ourIcon from "~/icons/d-fissure.png";
+import titleImage from "~/assets/logo-title.png";
+import HeroImage from "~/components/hero-image.astro";
+import Starfield from "~/components/starfield2.astro";
+import GitHubCorner from "./github-corner.astro";
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 20vw, 30vw";
+---
+
+<section class="relative h-full bg-black">
+  <Starfield />
+  <!-- <GitHubCorner /> -->
+  <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
+    <HeroImage />
+  </div>
+  <div class="relative grid h-full place-items-center grid-cols-1" style="pointer-events: none;">
+    <h2
+      class="flex flex-col self-auto place-items-center grid-cols-1"
+    >
+      <div
+        class="w-2/3 max-w-xl self-center sm:w-10/12 sm:self-auto sm:justify-self-center"
+      >
+        <Picture
+          class="h-full w-full object-cover"
+          src={titleImage}
+          widths={widths}
+          sizes={sizes}
+          loading="Sync"
+          alt="Sync"
+        />
+      </div>
+      
+      <div>
+        <p 
+          class="default-title text-center text-2xl md:text-3xl"
+          style="padding-top: 40px;"
+        >Productizing Companionship With Affective Computing
+        </p>
+      </div>
+    </h2>
+
+  </div>
+</section>
+
+<noscript>
+  <style>
+    #splash-bg-fallback {
+      display: block;
+    }
+  </style>
+</noscript>
+
+<style>
+  @keyframes float {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 30px, 0);
+    }
+  }
+
+  #astronaut {
+    animation: float linear 2.5s infinite alternate;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #astronaut {
+      @apply animate-none;
+    }
+
+    :global(#starfield) {
+      @apply hidden;
+    }
+
+    #splash-bg-fallback {
+      @apply block;
+    }
+  }
+</style>

@@ -1,0 +1,65 @@
+---
+import { Picture } from "@astrojs/image/components";
+import ourIcon from "~/icons/d-fissure.png";
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<!-- <ContentSection id="intro">
+  <Icon slot="eyebrow" name="logomark" class="h-32" />
+ 
+
+  <Fragment slot="lead">
+    Astro is a new kind of site builder for the
+    <span class="text-primary">modern</span> web.
+    <span class="text-primary">Lightning-fast</span>
+    performance meets <span class="text-primary">powerful</span> developer experience.
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="https://docs.astro.build/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon pack="mdi" name="telescope" class="h-8" />
+      <span>Read the docs</span>
+    </a>
+    <a
+      href="https://astro.new/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon pack="mdi" name="rocket" class="h-8" />
+      <span>Try it out</span>
+    </a>
+  </div>
+</ContentSection> -->
+<div
+  id="intro"
+  class="flex scroll-mt-24 flex-col items-center space-y-8"
+>
+  <div class="flex flex-row items-center">
+     <!-- <Picture
+        class="h-20 object-cover"
+        src={ourIcon}
+        widths={[400, 400]}
+        sizes={"400vw"}
+        loading="eager"
+      />
+      <div class="text-3xl">
+        次元裂缝科考队
+      </div> -->
+      <div class="text-3xl">
+        热爱并行动
+      </div> 
+  </div>
+  <p class="lg:w-3/4 text-start text-sm">
+    我们是一个相信<span class="text-primary">热爱至上</span>的<span class="text-primary">MR应用开发团队</span>。我们怀揣着简单纯粹的愿望：探索出MR的Killer APP形态，并将它在现实的制约下一步一步真正带到用户面前。<br/>
+    我们相信，以及应该很多人都相信，一个<span class="text-primary">虚实互通的世界</span>，一个将数字世界的虚拟内容和强大算力融入现实生活中的世界，会有<span class="text-primary">无限的精彩、无比的便捷</span>。人们一遍又一遍地憧憬着这个美好的未来世界：MR眼镜拓宽现实世界的边界，让人们可以在枯燥的现实生活中得以寻找精灵宝可梦，在平凡的家中打开窗却看到雪山、星空、大海，拿起筷子释放火球、闪电与魔法；智能眼镜理解现实并提供帮助，让家长一眼从人群中找到自己走散的孩子、让工人在操作机械时快速获得指引、让吃货在寻找美食时快速辨别眼前的商店是否好评如潮。<br/>
+    遗憾的是，这一天始终没有到来，但，它却也在人们前赴后继的努力和探索中一点点向我们接近。创新而美好的事物不是开天辟地一般凭空出现的，而是<span class="text-primary">慢慢地从一片荒芜中逐渐萌芽、成长</span>，从一片无边的黑暗中破土而出，最终枝繁叶茂，让远方的人们惊叹不已。这离不开各行各业的努力、前赴后继的探索、理想主义的坚持，在一次又一次的泡沫与低谷中稳步成长。<br/>
+    而我们，希望为这个未来世界的到来做点什么。有人让MR眼镜更轻薄、更清晰、更持久、更强大，有人建设各种基础设施和中间件，而我们最感兴趣的是，直面“用户为什么需要MR”的问题，<span class="text-primary">将MR用户场景定义清晰</span>，并且最重要的是，<span class="text-primary">在当下的硬件和基础设施的限制条件下，给出可行解</span>。把东西在现实条件下做出来，才能真正地服务用户；把东西在现实条件下做出来，才能让MR在软件和硬件的相互成就下螺旋上升。<br/>
+    我们<span class="text-primary">成立于2021年11月，坚信“实践出真知”</span> ，研发了多款MR游戏。 就像触屏机的水果忍者，VR的节奏光剑，我们决心先做出一款成功的基于MR交互乐趣的轻量休闲游戏，让用户感受到MR的独特魅力与价值。并且以此为开始，积累MR场景认知、积累研发经验，前往我们最终的目的地。<br/>
+    截至目前，我们主要以兼职的方式，实践摸索前进，而现在，随着“用户为什么需要MR”的问题答案逐渐清晰，出于我们“要做出来”的信念，全职开发也成为了我们考虑的选项之一。在长达两年的实践摸索中，我们除了认知的逐渐积累，也慢慢汇聚出了<span class="text-primary">对MR有热情和信念，并真正为之付出行动的伙伴们</span>。现在，我们的团队覆盖算法、研发、策划、交互、美术、产品，如果你也对我们的事业感兴趣的话，<span class="text-primary">真诚邀请你和我们试着一起结伴同行</span>。
+
+
+  </p>
+  <slot />
+</div>

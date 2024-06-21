@@ -1,0 +1,58 @@
+---
+import { Picture } from "@astrojs/image/components";
+// import ourIcon from "~/icons/favicon.png";
+import ourIcon from "~/assets/logo-title.png";
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<!-- <ContentSection id="intro">
+  <Icon slot="eyebrow" name="logomark" class="h-32" />
+ 
+
+  <Fragment slot="lead">
+    Astro is a new kind of site builder for the
+    <span class="text-primary">modern</span> web.
+    <span class="text-primary">Lightning-fast</span>
+    performance meets <span class="text-primary">powerful</span> developer experience.
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="https://docs.astro.build/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon pack="mdi" name="telescope" class="h-8" />
+      <span>Read the docs</span>
+    </a>
+    <a
+      href="https://astro.new/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon pack="mdi" name="rocket" class="h-8" />
+      <span>Try it out</span>
+    </a>
+  </div>
+</ContentSection> -->
+<div
+  id="simple_intro"
+  class="flex scroll-mt-24 flex-col items-center space-y-8"
+>
+  <div class="flex flex-row items-center">
+     <Picture
+        class="h-10 object-cover"
+        src={ourIcon}
+        widths={[400, 400]}
+        sizes={"400vw"}
+        loading="eager"
+      />
+<!--       <div class="text-3xl">
+        次元裂缝科考队
+      </div> -->
+  </div>
+  <p class="lg:w-3/4 text-start text-sm">
+    Sync is dedicated to building a harmonious coexistence between humans and machines, deepening its understanding of users over the course of long-term relationships. Our flagship product, MotiCat, is an AI virtual pet that helps users set and track personal goals, offering emotional support such as motivation and comfort as they strive to achieve these goals. Addressing the challenges of an era marked by economic downturn and widespread anxiety, MotiCat leverages large language models and game design to scale encouragement and companionship, helping users achieve their goals and live positively. Initially accessible via smartphones for daily interaction, MotiCat plans to expand to spatial computing devices like VisionPro to enable a variety of interactions and deepen emotional connections.
+    <br/>
+    <br/>
+  </p>
+  <slot />
+</div>
