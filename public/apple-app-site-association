@@ -1,0 +1,11 @@
+{
+    "applinks": {
+         "apps": [],
+         "details": [
+             {
+                 "appID": "Q447KNX76H.com.sync-xyz.moticat",
+                 "paths": ["/app-ios/", "/app-ios/*"]
+             }
+         ]
+     }
+}
