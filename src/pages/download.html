@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载小喵希拉App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFF8E4;
+            font-family: PingFang SC, Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 16px;
+            font-size: 2rem;
+        }
+
+        .image-container {
+            margin: 20px 0;
+            border-radius: 12px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            padding: 20px 56px;
+            box-sizing: border-box;
+            background-color: #FFFBF2;
+            color: #4F4F4F;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            font-weight: 600;
+            border:  1px solid #313131;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .button {
+                width: 100%;
+                justify-content: center;
+                padding: 16.5px 71px;
+            }
+            
+            .button-group {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+            }
+        }
+
+        .title {
+        	color:  #4F4F4F;
+        }
+
+        .subtitle {
+        	margin:  0 auto 54px auto;
+        	display: flex;
+        	align-items:  center;
+        	justify-content: center;
+        }
+
+        .icon-subtitle-app-download {
+        	width:  30px;
+        	height: 30px;
+        }
+
+        .icon-download {
+        	width:  36px;
+        	height: 36px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">小喵希拉</h1>
+        <div class="subtitle">
+        	<span>永远爱你的小喵</span>
+        	<img src="https://moticat-mp.tos-cn-beijing.volces.com/v0-2-5/icon-subtitle-app-download.png" class="icon-subtitle-app-download" />
+        </div>
+        
+        <div class="image-container">
+            <img src="https://moticat-mp.tos-cn-beijing.volces.com/v0-2-5/cat.gif" alt="小喵希拉" />
+        </div>
+
+        <div class="button-group">
+            <a class="button" target="_blank" href="https://apps.apple.com/app/Q447KNX76H.com.sync-xyz.moticat">
+                <img class="icon-download" src="https://moticat-mp.tos-cn-beijing.volces.com/v0-2-5/icon-ios.png" alt="下载小喵希拉苹果App" />
+                <span>iOS 下载</span>
+            </a>
+            <a class="button" target="_blank" href="https://public.sync-xyz.com/android_apk/app-release-1.0.4.apk">
+                <img class="icon-download" src="https://moticat-mp.tos-cn-beijing.volces.com/v0-2-5/icon-android.png" alt="下载小喵希拉安卓App" />
+                <span>安卓下载</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
