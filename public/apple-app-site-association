@@ -7,7 +7,7 @@
                  "paths": [
                      "/app-ios/",
                      "/app-ios/*",
-                     "/qq_conn/102792575"
+                     "/qq_conn/*"
                  ]
              }
          ]
